@@ -1,0 +1,186 @@
+
+body{background-color: white;}
+
+/* Menu */
+#menu{display: none;}
+
+.navbar-default{
+    background-color: black;
+    margin: 0;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: darkgray;
+}
+
+
+/* Sobre --------------------------------*/
+
+#sobre{
+    background-image: url('../img/sean-pollock-PhYq704ffdA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid black 2px;
+}
+
+.page-header-sobre > p {
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.sobre-img-right{
+    width: 15em;
+    height: 15em;
+    padding: 3px;
+    margin-right: 4em;
+    border-radius: 25px;
+    box-shadow: 4px 3px 4px black;
+}
+
+.sobre-img-left{
+    width: 15em;
+    height: 15em;
+    padding: 3px;
+    border-radius: 25px;
+    box-shadow: 4px 3px 4px black;
+}
+
+.sobre-img-right:hover{
+    box-shadow: 4px 3px 4px slategray;
+    transition: 1s initial;
+}
+
+.sobre-img-left:hover{
+    box-shadow: 4px 3px 4px slategray;
+    transition: 1s initial;
+}
+
+
+#sobre-texto2{margin-right: 60px; padding: 14px;
+    background-color: ghostwhite;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 22px 22px;
+}
+
+/* Contato ----------------------------------------*/
+
+#contato{margin-bottom: 42px;
+    font-size: 6vh;
+    color: white;
+    padding-top: 5%;
+}
+
+#contato-main{
+    color: white;
+    background-image: url('../img/chris-ried-ieic5Tq8YMk-unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* imgs ----------------------------------------- */
+
+.img-background{
+    
+    background-image: url("../img/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+    height: 680px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-bottom: black 2px solid;
+}
+
+.img-background > .fundo-transparente > h1{margin:0;
+    padding: 1.4em;
+    color: white;
+    font-size: 8vh;
+    text-shadow: 3px 3px black;
+}
+
+
+/* Barra -------------------------------- */
+
+
+.barra-sep{
+    border: aqua 1px solid; width: 50%; margin: auto;
+}
+.barra-titulo{
+    border-bottom:solid aqua  1px;
+    width: 15%;
+    margin: auto;
+}
+
+
+/* Outros ----------------------------- */
+
+.page-header > h1{
+    font-size: 6vh;
+}
+
+.fundo-transparente{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+
+
+
+
+/* Footer ------------------------------- */
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Animte curso -------------------------------*/
+.img-background > .fundo-transparente > h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding-top: 12%;
+  }
+
+ .img-background > .fundo-transparente > h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+/* Animate tela -----------------------------*/
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px,0,0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px,0,0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
