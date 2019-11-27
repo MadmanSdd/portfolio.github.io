@@ -1,0 +1,151 @@
+body{
+    background-color: #ccc;
+    margin: 0;
+}
+
+.hero{
+    background-image: url("../img/bg-3.jpg");
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+    border: solid 1px transparent;
+}
+
+.hero-content {
+    text-align: center;
+    color:white;
+    margin-top: 8%;
+}
+
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    margin: auto;
+    padding: 22px;
+    font-size: 16px;
+    border-bottom: solid 2px white;
+}
+
+.hero-content h1{
+    font-size:36px;
+    text-shadow: 2px 2px 3px black;
+    text-transform: uppercase;
+}
+
+.hero ul{
+    text-align: right;
+}
+
+.hero ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 22px 22px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 17px;
+    border: solid 1px white;
+    transition: all 4s ease;
+}
+
+.hero ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero ul li:hover{
+    background-color: rgba(0, 0, 0, .4);
+    transition: 1s;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.position-content{
+    background-color: white;
+    margin-top: 10px;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+.position-content > p{
+    font-family: cursive;
+}
+
+.position-content > h3{
+    background-color: white;
+    margin: 12px 10px 12px 0px;
+    font-size: 33px;
+    box-shadow: #ccc 1px 2px 1px;
+}
+
+.sobre-content{
+    text-align: center;
+}
+
+.sobre-content p{
+    text-align: right;
+    padding: 22px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto 22px 10px 10px;
+    font-size: 18px;
+    font-family: sans-serif,arial;
+    letter-spacing: 1px;
+}
+
+.sobre-content h3{
+    font-size: 33px;
+    padding: 8px;
+}
+
+.contato-content{
+     width: 20%;
+    margin: auto;
+    padding: 22px;
+}
+
+.contato-content h3{
+    margin: 20px 0 20px 0;
+    font-size: 33px;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    height: 60px;
+    margin-top: 22px;
+}
+
+footer p{
+    padding-top: 22px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.card{
+    margin-top: 1%;
+    width: 31%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card-1, .card-2{
+    margin-right: 3%;
+}
+
+.card img{ width: 100%;}
+
+ .card p{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40px;
+    margin-top: -10px;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    color: white;
+} 
+
+
+
+
