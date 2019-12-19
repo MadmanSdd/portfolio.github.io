@@ -48,7 +48,7 @@
             <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav ">
 
-                    <li >
+                    <li>
                         <a href="htmlcss.html">Html & Css</a>
                     </li>
                     <li class="active">
@@ -58,7 +58,7 @@
                 </ul>
             </div>
         </div>
-        
+
     </nav>
 
     <main id="sobre" class="projetos">
@@ -69,49 +69,32 @@
                 <h1>Htm5 & Css3</h1>
 
                 <div class="row ">
-                    
-                    
-                    <div class="sobre-hexagon col-lg-2">
-                        <div class="sobre-hexagon-inside">
-    
-                            <a href="../pag/projetos/html5&css3/infor/index.html" target="_black">
-                                    <img class="imgs-projetos" src="projetos/html5&css3/imgs/info.png" alt="infor">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sobre-hexagon col-lg-2">
-                        <div class="sobre-hexagon-inside">
-    
-                            <a target="_black" href="../pag/projetos/html5&css3/cursoweb/index.html">
-                            
-                                <img class="imgs-projetos col-lg-4" src="projetos/html5&css3/imgs/cursoweb.png" alt="cursoweb">
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <div class="sobre-hexagon col-lg-2">
-                        <div class="sobre-hexagon-inside">
-    
-                            <a target="_black" href="../pag/projetos/html5&css3/fashion/index.html">
-                            
-                                <img class="imgs-projetos col-lg-4" src="projetos/html5&css3/imgs/fashion.png" alt="">
-                            </a>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="sobre-hexagon col-lg-2">
-                        <div class="sobre-hexagon-inside">
-    
-                            <a target="_black" href="../pag/projetos/html5&css3/strata/index.html">
-                            
-                                <img class="imgs-projetos col-lg-4" src="projetos/html5&css3/imgs/strat.png" alt="">
-                            </a>
-                            
-                        </div>
-                    </div>
-                
-                 </div>
+
+                    <article class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <a class="moder-img" target="_black" href="../pag/projetos/html5&css3/strata/index.html">
+                            <img class="img-thumbnail img-fluid" src="projetos/html5&css3/imgs/strat.png" alt="strata">
+                        </a>
+                    </article>
+
+                    <article class="col-sm-12 col-md-12 col-lg-4 col-xl-6">
+                        <a class="moder-img" target="_black" href="../pag/projetos/html5&css3/cursoweb/index.html">
+                            <img class="img-thumbnail" src="projetos/html5&css3/imgs/cursoweb.png" alt="cursoweb">
+                        </a>
+                    </article>
+
+                    <article class="col-sm-6 col-md-6 col-lg-4 col-xl-6">
+                        <a class="moder-img" target="_black" href="../pag/projetos/html5&css3/fashion/index.html">
+                            <img class="img-thumbnail" src="projetos/html5&css3/imgs/fashion.png" alt="fashion">
+                        </a>
+                    </article>
+
+                    <article class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                        <a class="moder-img" href="../pag/projetos/html5&css3/infor/index.html" target="_black">
+                            <img class="img-thumbnail" src="projetos/html5&css3/imgs/info.png" alt="infor">
+                        </a>
+                    </article>
+
+                </div>
             </div>
         </section>
     </main>
@@ -128,39 +111,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
-    
+
     <script>
         $(document).ready(function () {
             $("#menu").fadeIn(2000)
-            // Add scrollspy to <body>
-            $('body').scrollspy({ target: ".navbar", offset: 50 });
 
-            // Add smooth scrolling on all links inside the navbar
-            $("#bs-example-navbar-collapse-1 a").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-
-
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                }  // End if
-
-            });
         });
 
 
