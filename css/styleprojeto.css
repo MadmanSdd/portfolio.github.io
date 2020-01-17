@@ -49,6 +49,10 @@
     color: white;
 }
 
+#sobre div .sobre-margin{
+    margin-bottom: 12.5em;
+}
+
 .fundo-transparente{
     background-color: rgb(0, 0, 0, .7);
     height: 100%;

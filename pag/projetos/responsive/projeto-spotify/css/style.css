@@ -1,0 +1,203 @@
+
+/* Layout */
+
+body , html, .capa{
+    height: 100%;
+}
+
+body{
+    background: url("../imagens/capa.png"),
+                url("../imagens/ruido.png"),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family:  Helvetica, sans-serif,Arial;
+    overflow-x: hidden;
+}
+
+.img-logo{
+    height: 2.5em; 
+    width: 8.25em;
+    display: block;
+    background: url("../imagens/spotify.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand{
+    padding: 0;
+}
+
+.navbar-transparente{
+    background: rgba(0, 0, 0,0.7);
+    padding: 1.4em 0 ;
+}
+
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a, #rodape .nav a{
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover, #rodape .nav a:hover{
+    color: rgb(32, 224, 215);
+    background: none;
+}
+
+
+/* Capa */
+.capa{
+    display: table;
+    width: 100%;
+}
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*  button */
+
+.btn-custom{
+    color: white;
+    border-radius: 5.625em;
+    padding: 10px 35px;
+    margin-left: 3.125em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+.btn-roxo{
+    background: #7c26f8;
+    border: 2px solid #7c26f8;
+}
+.btn-roxo:hover{
+    background-color: #6411d8;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+.btn-branco:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Servico */
+#servico{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.servico-album{
+    padding: 10px 0 10px 0;
+  
+}
+
+/* recursos */
+#recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.recurso-texto-infor h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: white;
+}
+
+.recurso-texto-infor h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.recurso-texto-azul{
+    color: rgb(0, 174, 255);
+}
+
+/* rotaciona */
+.rotacionar{
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/* rodape */
+#rodape{
+    background: black;
+    padding: 40px 0 20px 0;
+    position: relative;
+    text-align: center;
+}
+
+.itens-rede-sociais{
+    float: left;
+}
+
+/* Tipografias */
+
+.texto-capa > h1{
+    font-size: 6.25em;
+    font-weight: 900;
+    letter-spacing: -3px;
+    margin-bottom: 40px;
+    margin-top: 1em;
+}
+
+.servico-texto-infor h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.servico-texto-infor h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+.servico-texto-infor p{
+    margin-bottom: 2em;
+}
+
+.recurso-texto-infor p{
+    margin-bottom: 4em;
+}
+
+.cor-roxo-texto{
+    color: #7c26f8;
+}
+
+.recurso-texto-infor p{
+    color: white;
+    font-size: 18px;
+}
+
+#rodape h4{
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:768px){
+    .divisor{
+        opacity: 1;
+        transform: rotate(90deg);
+        height: 60px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+

@@ -1,5 +1,6 @@
 
-body{background-color: white;}
+body{background-color: white;
+}
 
 /* Menu */
 #menu{display: none;}
@@ -136,8 +137,9 @@ footer{
     background-color: black;
     text-align: center;
     color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
 
 
 /* Animte curso -------------------------------*/

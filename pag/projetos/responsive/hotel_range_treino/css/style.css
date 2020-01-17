@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icon-play{
+    width: 5em;
+    margin: auto;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.clearfix::after,.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.button-default{
+    background: #5d87d3;
+    padding: .9em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.button-default:hover{
+    background: #1d87d3;
+}
+
+.top-header{
+    text-align: center;
+    
+}
+.top-header-logo{
+    margin: .8em;
+}
+
+.top-nav{
+    background: #622474;
+    text-align: center;
+}
+
+.top-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+
+    transition: background .5s ease-in-out;
+}
+.top-nav a:hover{
+    background: #8f35a8;
+}
+
+.print-content{
+    background: #ddd;
+    text-align: center;
+    padding: 1em;
+}
+
+.print-content-tittle{
+    color: #8f35a8;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+.print-content-subtittle{
+    color: #803694;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.mei-content{
+    text-align: center;
+    background: #ddd;
+    padding: 1em;
+}
+
+.mei-content p{
+    padding: .5em;
+    margin: 1em;
+    line-height: 1.5;
+    color: #222;
+}
+.mei-content-tittle{
+    color: #803694;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.main-content{
+    text-align: center;
+}
+
+.main-content article{
+    margin-top: 2em;
+}
+
+.main-content-tittle{
+    letter-spacing: .2em;
+    color: #803694;
+    font-size: 1em;
+    font-weight: normal;
+}
+.main-content-tittle::first-letter{
+    font-size: 1.1875em;
+}
+.main-content p{
+    margin: 1em;
+    padding: .9em;
+    line-height: 1.4;
+}
+
+
+.hidden{
+    display: block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.footer{
+    background: #25303e;
+    color: #83969f;
+    padding-bottom: 2em;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+
+.footer-menu-bar{
+    list-style: none;
+    background: #303d4c;
+    margin: 0;
+    padding: 1em;
+}
+
+.footer-menu-bar li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menu-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color .5s ease-in-out;
+}
+.footer-menu-bar a:hover{
+    color: #50637a;
+}
+
+.footer p , .footer h3{
+    margin: 1em;
+    font-size: .86em;
+}
+
+.mei-content span[class^=icon]{
+    font-size: 3em;
+    color: #803694;
+}
+
+
+
+@media screen and (min-width: 48.75em){
+    .top-header{
+        float: left;
+    }
+
+    .top-nav{
+        float: right;
+        margin-top: 2em;
+        background: transparent;
+    }
+
+    .top-nav a{
+        color: #8f35a8;
+    }
+    .top-nav a:hover{ background: transparent;
+        color: #622474;
+    }
+    
+    .top-nav li{
+        display: inline-block;
+    }
+
+    .print-content{
+        background: #622474;
+        height: 18em;
+    }
+
+    .print-content-tittle{
+        color: white;
+    }
+    .print-content-subtittle{
+        color: white;
+    }
+
+    .col-1-2{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-tittle {
+        text-align: left;
+        margin-left: 1em;
+    }
+    .main-content p{
+        text-align: left;
+    }
+
+    .button-default{
+        float: right;
+        margin-right: 1em;
+    }
+    
+}
+
+@media screen and (min-width: 62.5em){
+
+    .print-content{
+        background: #8f35a8 url("../images/bg_topo_1198x670.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 26em;
+    }
+
+    .print-content-tittle{
+        margin-top: 3em;
+    }
+
+    .print-content div{
+        margin-top: 2em;
+    }
+
+    .mei-content-tittle{
+        font-size: 1.3em;
+    }
+
+    .mei-content p{
+        font-size: .9em;
+    }
+
+    .col-1-4{
+        width: 25%;
+        margin: 1% auto;
+    }
+}
+
+
+@media screen and (min-width: 64em){
+
+    .print-content{
+        background: #8f35a8 url("../images/bg_topo_1600x1374.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 34em;
+    }
+
+
+    .print-content div{
+        margin-top: 11em;
+    }
+
+    .print-content-tittle, .print-content p{
+        margin-left: 7em;
+        margin-right: 7em;
+    }
+
+    .button-default{
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
